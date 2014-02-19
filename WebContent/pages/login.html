@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Maadhu Agency</title>
+</head>
+<body background="images/login.jpg" bgcolor="#333333"> 
+<form action="../loginAuthenticate" method="post">
+<div class="login">
+   <tr><td><input type="text" placeholder="Username" id="username"></td>
+  	 <td><input type="password" placeholder="Password" id="password"> </td>
+   </tr> 
+  <a href="#" class="forgot">forgot password?</a>
+  <button onclick="isValidUser()">Sign In</button>
+</div>
+<div class="shadow"></div>
+</form>
+
+<script>
+function isValidUser(){
+	alert("Am here"+document.getElementById("username").valueOf().toString());
+	if(document.getElementById("username").valueOf().toString().equals("") || document.getElementById("password").valueOf().toString().equals("")){
+		document.getElementById("username").focus();
+		return false;
+	}
+}
+</script>
+</body>
+</html>
